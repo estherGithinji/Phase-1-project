@@ -12,23 +12,28 @@
         <div id="navbar">
             <a class="nav-link" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="">Cartegory</a>
-            <a class="nav-link" href="">profile</a>
+            <div>
+                <button id="open-button" onclick="openForm()">Profile</button>
+            </div>
         </div>
-        <div>
-            <form action="submit" id="submit-form">
-                <label for="name">Image Cartegory:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Enter Image cartegory"><br>
-                <label for="name">Image description :</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Enter description"><br>
-                <label for="name">Image URL:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Enter URL"><br><br>
-                <input type="submit" value="Submit">
-            </form>
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h2>Login</h2>
+            
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
         </div>
     </div>
     <div class="left">
         <div id="title">
-            <img id="logo" src="https://o.remove.bg/downloads/c0eb9feb-946f-4b8c-93e9-2b13ae9e33d0/Art_Logo_Coloring_Page-removebg-preview.png" alt="">
+            <img id="logo" src="https://o.remove.bg/downloads/8ea96688-a58f-4507-8941-72c5c6d39bab/Art_Logo_Coloring_Page-removebg-preview.png" alt="">
             <h1>MY ART WORLD</h1>
         </div>
         <br>
@@ -49,6 +54,22 @@
                 </div>
               </nav>
         </div>
-    </div>
+        <div>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            
+            <!-- <div class="card" style="width: 20rem;">
+                <img id="card-img" src="https://i.pinimg.com/564x/d2/c7/45/d2c745dd1480b45966fa1075b9dfb2a7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div> -->
+        </div>
+    <script src="index.js"></script>
 </body>
 </html>
