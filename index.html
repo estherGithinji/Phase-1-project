@@ -45,7 +45,7 @@
     <br>
     <div class="section-II">
         <div id="fav-art">
-            <div id="post">
+            
             <form id="form" action="/action_page.php">
                 <label for="name">type:</label><br>
                 <input type="text" id="img-type" name="image-type" placeholder="Enter Art Type" value="" ><br>
@@ -53,8 +53,8 @@
                 <input type="text" id="img-link" name="lname" placeholder="Enter URL" value="" ><br><br>
                 <input type="submit" value="Submit">
               </form> 
-            </div>
-            <h3>My Art gallary</h3>
+            
+            <h3>My Art gallary: <span id="gala">click to view</span></h3>
         </div>
             
     <!-- display my cards -->
@@ -67,7 +67,12 @@
                 height= "400px";
                 width= 400px;>
             <div class="card-body">
-                <h5 class="card-title">Card title</h>
+                <input type="text" id="comment-box" placeholder="Enter comment">
+                <button id="post">Post</button>
+                <ul id="unordered">
+       
+                </ul>
+                <button>like</button>
                 </div>
             </div> 
         </div>   

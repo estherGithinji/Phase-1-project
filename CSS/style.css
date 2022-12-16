@@ -207,3 +207,23 @@ input[type=submit]:hover {
 li{
     list-style: none;
 }
+
+#form{
+    background-color: white;
+    text-align: center;
+    
+}
+
+#comment-box, #post {
+    border: none;
+    border-radius: 5px;
+}
+#post:hover{
+    background-color: deeppink;
+}
+
+#gala{
+    color: blueviolet;
+}
+
+ 

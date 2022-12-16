@@ -71,3 +71,14 @@ postImage.addEventListener("submit", (e) =>{
     imagePost.scr = data.imageUrl
   }
 })
+
+const post= document.getElementById("post");
+post.addEventListener("click", (e) =>{
+    const commentBoxValue= document.getElementById("comment-box").value;
+ 
+    const li = document.createElement("li");
+    const text = document.createTextNode(commentBoxValue);
+    li.appendChild(text);
+    document.getElementById("unordered").appendChild(li);
+ 
+});
