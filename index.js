@@ -45,7 +45,7 @@ button.addEventListener('click', () => {
     button.classList.toggle('liked')
 })
 
-const postImage = document.querySelector('#post')
+const postImage = document.querySelector('#form')
 postImage.addEventListener("submit", (e) =>{
   e.preventDefault();
 
@@ -80,5 +80,12 @@ post.addEventListener("click", (e) =>{
     const text = document.createTextNode(commentBoxValue);
     li.appendChild(text);
     document.getElementById("unordered").appendChild(li);
+    const button = document.querySelector('.btn')
+
+button.addEventListener('click', () => {
+    button.classList.toggle('liked')
+})
  
 });
+
+ 

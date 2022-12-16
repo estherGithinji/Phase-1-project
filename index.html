@@ -47,14 +47,15 @@
         <div id="fav-art">
             
             <form id="form" action="/action_page.php">
+                <h4>Post your image:</h4>
                 <label for="name">type:</label><br>
                 <input type="text" id="img-type" name="image-type" placeholder="Enter Art Type" value="" ><br>
                 <label for="link">URL:</label><br>
                 <input type="text" id="img-link" name="lname" placeholder="Enter URL" value="" ><br><br>
-                <input type="submit" value="Submit">
+                <input type="submit" value="add">
               </form> 
             
-            <h3>My Art gallary: <span id="gala">click to view</span></h3>
+            <h3 id="li">My Art gallary: <span id="gala">click to view</span></h3>
         </div>
             
     <!-- display my cards -->
@@ -64,15 +65,27 @@
                 src="${art.url}" 
                 class="card-img-top" 
                 alt="..."
-                height= "400px";
-                width= 400px;>
+                height= "500px";
+                width= 500px;>
             <div class="card-body">
                 <input type="text" id="comment-box" placeholder="Enter comment">
-                <button id="post">Post</button>
                 <ul id="unordered">
-       
                 </ul>
-                <button>like</button>
+                <button id="post">Post</button>
+                <button class="btn btn-like">
+                    <span class="btn-icon btn--icon-default">
+                      <span class="fa fa-heart"></span>
+                    </span>
+                    <span class="btn-icon btn--icon-liked">
+                      <span class="fa fa-heart"></span>
+                    </span>
+                    <span class="btn-content  btn-content--liked">
+                      Liked
+                    </span>
+                    <!-- <span class="btn-content btn-content--default">
+                      Like
+                    </span> -->
+                  </button>
                 </div>
             </div> 
         </div>   

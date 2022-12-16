@@ -176,22 +176,15 @@ input[type=submit]:hover {
     display: flex;
     /* padding-top: 5%; */
 }
-#digital-img {
-    margin-top: 40%;
-}
+
 
 .section-II{
     background-color: wheat;
-    height: 600px;
+    height: 800px;
     margin-top: 600px;
 }
  
-.card{
-     margin-top: 10%;
-     margin-left: 50%;
-
-}
-
+ 
 #fav-art{
     background-color: grey;
     width: 29%;
@@ -201,7 +194,9 @@ input[type=submit]:hover {
 
 #post{
     margin-left: 3%;
-    
+    height: 30px;
+    width: 25%;
+    outline: 0;
 }
 
 li{
@@ -211,7 +206,7 @@ li{
 #form{
     background-color: white;
     text-align: center;
-    
+
 }
 
 #comment-box, #post {
@@ -220,10 +215,108 @@ li{
 }
 #post:hover{
     background-color: deeppink;
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
 }
 
 #gala{
     color: blueviolet;
 }
 
+.display{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+h4{
+    margin-top: 0;
+}
+
+.btn {
+    width: 30%; height: 30px;
+    outline: 0;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.05);
+    transition: 1.5s cubic-bezier(.21,.04,.26,.99);
+
+    /*  
+    color: #000;
+    cursor: pointer;
+    display:flex;
+    justify-content: space-between;
+     */
+}
+
+.btn:hover {
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
+    border-color: var(--red);
+}
+
+
+.btn-like {
+    font-size: small;
+    border-radius: 5px;
+    transition: 1.5s cubic-bezier(.21,.04,.26,.99);
+     
+}
+
+
+.btn-like.liked {
+    background: var(--red);
+    border-color: var(--red);
+}
+
+/*-- Button Icon -- */
+ .btn-icon {
+    display: inline-block;
+    width: 32px;
+    height: 36px;
+    position: absolute;
+    left: 1.5rem;
+    transition: 1s cubic-bezier(.21,.04,.26,.99);
+    transform: rotate(0deg)
+}
+.btn:hover .btn-icon {
+    color: var(--red);
+}
+.btn.liked:hover .btn-icon {
+    color: var(--black);
+}
+.liked .btn--icon-default {
+    transform: rotate(-90deg)
+}
+.btn:not(.liked).btn--icon-liked {
+    transform: rotate(-90deg)
+}
+.liked .btn--icon-default,
+.btn--icon-liked {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+}
+.btn--icon-default,
+.liked .btn--icon-liked {
+    opacity: 1;
+    left: 1.5rem;
+}
+
+/*-- Button Content -- */
+ .btn-content {
+    transition: transform 0.1s ease;
+    display: inline-block; 
+    /* position: absolute;
+    right: 0; */
+}
+ .liked .btn-content {
+    color: var(--white);
+}
+.btn:hover.liked .btn-content {
+    color: var(--black);
+}
  
+.liked .btn-content--default {
+    transform: translate(24px)
+}  

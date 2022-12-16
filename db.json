@@ -18,7 +18,7 @@
     {
       "id": 4,
       "type": "painting",
-      "url": "https://s3.amazonaws.com/showflipper/product/69601536314088.jpg"
+      "url": "https://mymodernmet.com/wp/wp-content/uploads/2018/05/painting-ideas-3-1.jpg"
     },
     {
       "id": 5,
@@ -34,6 +34,16 @@
       "type": "abstract",
       "url": "https://i.pinimg.com/originals/92/25/26/922526935f35f58cdbab01453c4e5baf.jpg",
       "id": 7
+    },
+    {
+      "type": "aesthetic",
+      "url": "https://historylists.org/images/the-scream.jpg",
+      "id": 8
+    },
+    {
+      "type": "",
+      "url": "",
+      "id": 9
     }
   ]
 }
