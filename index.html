@@ -33,7 +33,7 @@
     </div>
     <div class="left">
         <div id="title">
-            <img id="logo" src="https://o.remove.bg/downloads/8ea96688-a58f-4507-8941-72c5c6d39bab/Art_Logo_Coloring_Page-removebg-preview.png" alt="">
+            <img id="logo" src="https://o.remove.bg/downloads/33d18e4c-af49-4185-9eea-99be51f2622f/Art_Logo_Coloring_Page-removebg-preview.png" alt="">
             <h1>MY ART WORLD</h1>
         </div>
         <br>
@@ -44,32 +44,36 @@
     </div>
     <br>
     <div class="section-II">
-        <div id="second-nav">
-            <nav class="navbar bg-light">
-                <div class="container-fluid">
-                  <form class="d-flex" action="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
+        <div id="fav-art">
+            <div id="post">
+            <form id="form" action="/action_page.php">
+                <label for="name">type:</label><br>
+                <input type="text" id="img-type" name="image-type" placeholder="Enter Art Type" value="" ><br>
+                <label for="link">URL:</label><br>
+                <input type="text" id="img-link" name="lname" placeholder="Enter URL" value="" ><br><br>
+                <input type="submit" value="Submit">
+              </form> 
+            </div>
+            <h3>My Art gallary</h3>
         </div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
             
-            <!-- <div class="card" style="width: 20rem;">
-                <img id="card-img" src="https://i.pinimg.com/564x/d2/c7/45/d2c745dd1480b45966fa1075b9dfb2a7.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- display my cards -->
+        <div class="display">
+            <div class="card" style="width: 20rem;">
+                <img id="img"
+                src="${art.url}" 
+                class="card-img-top" 
+                alt="..."
+                height= "400px";
+                width= 400px;>
+            <div class="card-body">
+                <h5 class="card-title">Card title</h>
                 </div>
-              </div> -->
-        </div>
+            </div> 
+        </div>   
+
+    </div>
+   
     <script src="index.js"></script>
 </body>
 </html>

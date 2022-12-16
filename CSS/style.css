@@ -11,6 +11,11 @@
     width: 30%;
     height: 20%;
     
+    
+ }
+
+ h1{
+    font-size: larger;
  }
 
 .right{
@@ -49,17 +54,11 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(98, 57, 57);
     margin-top: 3%;
     margin-left: 3%;
     margin-bottom: 3%;
     margin-right: 3%;
-}
-
-.section-II{
-    background-color: rgb(210, 177, 84);
-    height: 600px;
-    margin-top: 600px;
 }
 
 .d-flex{
@@ -171,18 +170,40 @@ input[type=submit]:hover {
     margin-bottom: 5%;
 }
 
-.card{
-    border-style: dotted;
-    margin-left: 30%;
-    margin-right: 25%;
-    height: 450px;
-    width: 600px;
-    /* overflow-x: scroll; */
+.section-II{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    /* padding-top: 5%; */
+}
+#digital-img {
+    margin-top: 40%;
 }
 
-#card-img{
-    height: 250px;
-    width: 250px;
-    margin-top: 2%;
-    margin-left: 10%;
+.section-II{
+    background-color: wheat;
+    height: 600px;
+    margin-top: 600px;
+}
+ 
+.card{
+     margin-top: 10%;
+     margin-left: 50%;
+
+}
+
+#fav-art{
+    background-color: grey;
+    width: 29%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#post{
+    margin-left: 3%;
+    
+}
+
+li{
+    list-style: none;
 }
