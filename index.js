@@ -37,6 +37,10 @@ function imageCartegory(art){
     const imageCartegory = document.querySelector('.card-title')
     imageCartegory.textContent = art.type
   })
+  list.addEventListener("dblclick", ()=>{
+    list.innerHTML= ""
+    deleteList (art.id)
+  })
 }
 
 const postImage = document.querySelector('#form')
@@ -78,3 +82,16 @@ const postBtn = document.querySelector ('#post').addEventListener ('click',()=> 
 const lykBtn = document.querySelector ('#like-button').addEventListener ('click', ()=>{
   const likes = document.querySelector ('#likes').textContent =('liked')
 })
+
+function deleteList (id){
+  fetch(`http://localhost:3000/art/${id}`, {
+    method: 'DELETE',
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  .then(resp => resp.json())
+  .then((deleteTheImage)=>{
+    console.log(deleteTheImage)
+  })
+}
