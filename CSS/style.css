@@ -1,64 +1,32 @@
- .left{
-    background-color: grey;
-    float: left;
-    width: 29%;
-    height: 600px;
-    border-right-style: solid;
-    
- }
- 
- #logo{
-    width: 30%;
-    height: 20%;
-    
-    
- }
-
- h1{
-    font-size: larger;
- }
-
-.right{
-    background-image: url(https://i.pinimg.com/564x/9d/b3/1b/9db31bb14b79dd048afda91ea85a9f58.jpg);
+#top{
+    background-color: aqua;
+    background-image: url("https://i.pinimg.com/564x/dd/c7/68/ddc768bb97c211cd5e0dcfb3508f7774.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    float: right;
-    width: 70.7%;
-    height: 600px;
+    background-size:contain;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    height: 200px;
+}
+
+h1{
+    margin-left: 20%;
+    font-size: 50px;
+    font-family:'fantasy';
  }
 
- #navbar{
+ p{
+    margin-left: 20%;
+ }
+
+.section-II{
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    height: 700px;
     display: flex;
-    /* justify-content: center;
-    justify-content: space-around; */
-    background-color: black;
-    height: 10%;
- }
-
-#title{
-    margin-top: 30%;
-    margin-left: 5%;
-    font-size: xx-large;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-#paragraph{
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.nav-link{
-    color: rgb(255, 255, 255);
-    margin-top: 2%;
-    margin-left: 2%;
-}
-
-body{
-    background-color: rgb(98, 57, 57);
-    margin-top: 3%;
-    margin-left: 3%;
-    margin-bottom: 3%;
-    margin-right: 3%;
+    background-color: aqua;
+    margin-top: 1%;
 }
 
 .d-flex{
@@ -66,8 +34,8 @@ body{
     justify-content: center;
     padding-top: 3%;
     margin-right: 10%;
-    
 }
+
 #submit-form{
     margin-top: 10%;
     font-size: large;
@@ -170,26 +138,12 @@ input[type=submit]:hover {
     margin-bottom: 5%;
 }
 
-.section-II{
-    width: 100%;
-    height: 700px;
-    display: flex;
-    /* padding-top: 5%; */
-}
-
-
-.section-II{
-    background-color: wheat;
-    height: 800px;
-    margin-top: 600px;
-}
- 
- 
 #fav-art{
     background-color: grey;
     width: 29%;
     margin-top: 0;
     margin-bottom: 0;
+    height: 100%;
 }
 
 #post{
@@ -233,90 +187,12 @@ h4{
     margin-top: 0;
 }
 
-.btn {
-    width: 30%; height: 30px;
-    outline: 0;
-    border: 2px solid #ccc;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.05);
-    transition: 1.5s cubic-bezier(.21,.04,.26,.99);
-
-    /*  
-    color: #000;
+.like-button{
+    border: hidden;
+    color: crimson;
+    font-size: 34px;
+    background-color: transparent;
+    padding-left: 5%;
     cursor: pointer;
-    display:flex;
-    justify-content: space-between;
-     */
 }
 
-.btn:hover {
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
-    border-color: var(--red);
-}
-
-
-.btn-like {
-    font-size: small;
-    border-radius: 5px;
-    transition: 1.5s cubic-bezier(.21,.04,.26,.99);
-     
-}
-
-
-.btn-like.liked {
-    background: var(--red);
-    border-color: var(--red);
-}
-
-/*-- Button Icon -- */
- .btn-icon {
-    display: inline-block;
-    width: 32px;
-    height: 36px;
-    position: absolute;
-    left: 1.5rem;
-    transition: 1s cubic-bezier(.21,.04,.26,.99);
-    transform: rotate(0deg)
-}
-.btn:hover .btn-icon {
-    color: var(--red);
-}
-.btn.liked:hover .btn-icon {
-    color: var(--black);
-}
-.liked .btn--icon-default {
-    transform: rotate(-90deg)
-}
-.btn:not(.liked).btn--icon-liked {
-    transform: rotate(-90deg)
-}
-.liked .btn--icon-default,
-.btn--icon-liked {
-    opacity: 0;
-    color: #fff;
-    position: absolute;
-}
-.btn--icon-default,
-.liked .btn--icon-liked {
-    opacity: 1;
-    left: 1.5rem;
-}
-
-/*-- Button Content -- */
- .btn-content {
-    transition: transform 0.1s ease;
-    display: inline-block; 
-    /* position: absolute;
-    right: 0; */
-}
- .liked .btn-content {
-    color: var(--white);
-}
-.btn:hover.liked .btn-content {
-    color: var(--black);
-}
- 
-.liked .btn-content--default {
-    transform: translate(24px)
-}  

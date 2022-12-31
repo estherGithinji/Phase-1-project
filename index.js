@@ -39,12 +39,6 @@ function imageCartegory(art){
   })
 }
 
-const button = document.querySelector('.btn')
-
-button.addEventListener('click', () => {
-    button.classList.toggle('liked')
-})
-
 const postImage = document.querySelector('#form')
 postImage.addEventListener("submit", (e) =>{
   e.preventDefault();
@@ -72,20 +66,15 @@ postImage.addEventListener("submit", (e) =>{
   }
 })
 
-const post= document.getElementById("post");
-post.addEventListener("click", (e) =>{
-    const commentBoxValue= document.getElementById("comment-box").value;
- 
-    const li = document.createElement("li");
-    const text = document.createTextNode(commentBoxValue);
-    li.appendChild(text);
-    document.getElementById("unordered").appendChild(li);
-    const button = document.querySelector('.btn')
-
-button.addEventListener('click', () => {
-    button.classList.toggle('liked')
+const postBtn = document.querySelector ('#post').addEventListener ('click',()=> {
+  console.log ('This is it')
+  const createList = document.createElement ('li')
+  const input = document.querySelector ('#comment-box').value
+  const unordered = document.querySelector ('#unordered')
+  createList.textContent = input
+  unordered.appendChild (createList)
 })
- 
-});
 
- 
+const lykBtn = document.querySelector ('#like-button').addEventListener ('click', ()=>{
+  const likes = document.querySelector ('#likes').textContent =('liked')
+})
